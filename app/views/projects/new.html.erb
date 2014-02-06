@@ -1,0 +1,6 @@
+<%= form_for [@schedule, @project] do |f| %>
+  <%= f.text_field :name %><br>
+  <%= f.date_select :start_date %><br>
+  <%= f.date_select :end_date %><br>
+  <%= f.submit %>
+<% end %>

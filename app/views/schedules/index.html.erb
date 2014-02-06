@@ -1,0 +1,8 @@
+<h1>Schedules</h1>
+
+<% @schedules.each do |schedule| %>
+  <%= link_to schedule.name, schedule_path(schedule) %>
+<% end %>
+
+<br>
+<%= link_to "Create New Schedule", new_schedule_path %>
